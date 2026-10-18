@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Ampliada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="pokedex-container">
+    <header class="pokedex-header">
+      <h1>⚡ Pokédex ⚡</h1>
+      <div class="search-box">
+        <input type="text" id="pokemon-input" placeholder="Buscar por nombre o número (ej. Charizard o 6)">
+        <button id="search-btn">Buscar</button>
+        <button id="reset-btn" class="reset-btn">Ver Todos</button>
+      </div>
+    </header>
+
+    <!-- Estado de carga -->
+    <div id="status-message" class="status-message"></div>
+
+    <!-- Cuadrícula de Pokémon (Pantalla Principal) -->
+    <main id="pokemon-grid" class="pokemon-grid">
+      <!-- Los Pokémon se cargarán aquí automáticamente -->
+    </main>
+  </div>
+
+  <!-- VENTANA EMERGENTE (MODAL) PARA MOSTRAR DETALLES Y DESCRIPCIÓN -->
+  <div id="pokemon-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <button id="close-modal-btn" class="close-btn">&times;</button>
+      <div id="modal-body">
+        <!-- El contenido detallado se insertará dinámicamente -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
